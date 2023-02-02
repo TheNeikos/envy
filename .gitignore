@@ -1,6 +1,5 @@
-*.bk
+# Ignore cargo artifacts
 target
-Cargo.lock
 
 # Ignore direnv cache
 .direnv
