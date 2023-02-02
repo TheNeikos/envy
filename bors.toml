@@ -1,6 +1,5 @@
 status = [
     # Github Actions
-    "license",
     # Garnix
     "Evaluate flake.nix",
     "check envy [x86_64-linux]",
@@ -10,7 +9,6 @@ status = [
 ]
 pr_status = [
     # Github Actions
-    "license",
     "dco-check",
 ]
 update_base_for_deletes = true
