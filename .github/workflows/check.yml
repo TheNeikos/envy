@@ -2,9 +2,9 @@ name: "Check CloudMQTT"
 
 on:
   push:
-    branches: [main, staging, trying, release/*]
+    branches: [master, staging, trying, release/*]
   pull_request:
-    branches: [main, release/*]
+    branches: [master, release/*]
 
 env:
   CARGO_TERM_COLOR: always
@@ -29,5 +29,5 @@ jobs:
           python-version: '3.x'
       - name: Install gitlint
         run: pip install gitlint
-      - run: gitlint --commits $(git merge-base origin/main HEAD)..
+      - run: gitlint --commits $(git merge-base origin/master HEAD)..
 
