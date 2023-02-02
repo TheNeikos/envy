@@ -1,0 +1,17 @@
+status = [
+    # Github Actions
+    "license",
+    # Garnix
+    "Evaluate flake.nix",
+    "check envy [x86_64-linux]",
+    "check envy-clippy [x86_64-linux]",
+    "check envy-fmt [x86_64-linux]",
+    "package envy [x86_64-linux]",
+]
+pr_status = [
+    # Github Actions
+    "license",
+    "dco-check",
+]
+update_base_for_deletes = true
+cut_body_after = "<details>"
